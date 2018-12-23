@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const devs = ['452551643343487007','452551643343487007'];
-var prefix = "&";
-const adminprefix = "&"
+var prefix = "!";
+const adminprefix = "!"
 const db = require('quick.db');
 const client = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -3289,6 +3289,13 @@ const secreT = [
 
 
 
+client.on('ready', () => {
+    setInterval(function(){
+        client.guilds.get('524952008340275200').roles.find('name', 'color').edit({color: 'RANDOM'})
+    },7000);
+  
+
+})
 
 
 
