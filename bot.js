@@ -3285,23 +3285,14 @@ const secreT = [
 
 
 
-
-
-
-
+      
 client.on('ready', () => {
     setInterval(function(){
         client.guilds.get('524952008340275200').roles.find('name', 'color').edit({color: 'RANDOM'})
-    },7000);
+    },10000);
   
 
 })
-
-
-
-
-
-
 
 
 
